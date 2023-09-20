@@ -1,0 +1,569 @@
+/* Tambahkan kode CSS kalian di file ini */
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Font */
+.aoboshi__font {
+  font-family: 'Aoboshi One', serif !important;
+}
+
+/* Utility Class */
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.text__blue {
+  color: #1E3465;
+}
+
+.text__yellow {
+  color: #FFCB40;
+}
+
+.text__center {
+  text-align: center;
+}
+
+.text__start {
+  text-align: start;
+}
+
+.fw-600 {
+  font-weight: 500;
+}
+
+/* Style */
+body {
+  background: #F6F6F6;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Nav */
+nav {
+  /* Absolute agar Header tidak mendorong Main Section */
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 16px 0;
+  background: #272C49;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.company__logo img {
+  width: 45px;
+  aspect-ratio: 1/1;
+}
+
+.company__logo h1 {
+  --strokecolor: white;
+  font-size: 30px;
+  text-shadow:
+    -1.5px -1.5px 0 var(--strokecolor),
+    0 -1.5px 0 var(--strokecolor),
+    1.5px -1.5px 0 var(--strokecolor),
+    1.5px 0 0 var(--strokecolor),
+    1.5px 1.5px 0 var(--strokecolor),
+    0 1.5px 0 var(--strokecolor),
+    -1.5px 1.5px 0 var(--strokecolor),
+    -1.5px 0 0 var(--strokecolor);
+  margin-bottom: 6px;
+}
+
+/* header nav ul {
+  display: flex;
+  gap: 50px;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: white;
+  transition: .2s ease-in;
+}
+
+header nav ul li a:hover {
+  color: #FECE4C;
+} */
+
+.nav ul {
+  display: flex;
+  gap: 50px;
+  list-style-type: none;
+}
+
+.nav ul li a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: white;
+  transition: .2s ease-in;
+}
+
+.nav ul li a:hover {
+  color: #FECE4C;
+}
+
+.cta__button {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #B05F00;
+  font-weight: 600;
+  font-size: 16px;
+  background: #FFCB40;
+  border-radius: 8px;
+  padding: 10px 28px 10px 28px;
+  cursor: pointer;
+}
+
+/* Main Section */
+.main__container {
+  display: flex;
+  align-items: center;
+  /* Supaya Selalu Full disetiap Device */
+  height: 100vh;
+  padding: 50px 0;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.hero__message {
+  flex: 1 1 0%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.hero__message h1 {
+  font-size: 45px;
+  line-height: 1.1;
+  margin-bottom: 8px;
+  font-weight: 800;
+  color: #272C49;
+}
+
+.hero__message p {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero__image {
+  flex: 1 1 0%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__image img {
+  aspect-ratio: 1 / 1;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Features Section */
+section#features {
+  background: #fff;
+}
+
+.features__container {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.heading h1 {
+  font-size: 36px;
+  color: #272C49;
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+
+.heading p {
+  color: #36455B;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.all__features {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.features__row {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.features__card {
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.features__card img {
+  margin-bottom: 10px;
+}
+
+.features__card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #272C49;
+  margin-bottom: 5px;
+}
+
+.features__card p {
+  font-size: 15px;
+  color: #36455B;
+}
+
+/* Articles Section */
+.articles__container {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.top__articles {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.big__article {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.big__article .article__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.big__article img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.big__article .article__info .posted__date {
+  color: #898989;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.big__article .article__info .title {
+  color: #272C49;
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 5px;
+}
+
+.big__article .article__info .summary {
+  color: #36455B;
+  font-family: 'Poppins', sans-serif;
+}
+
+.top__4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.small__article {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  gap: 20px;
+}
+
+.small__article .article__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.small__article img {
+  width: 100%;
+  max-width: 140px;
+  max-height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.small__article .article__info {
+  flex-shrink: unset;
+}
+
+.small__article .article__info .posted__date {
+  color: #898989;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.small__article .article__info .title {
+  color: #272C49;
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 5px;
+}
+
+.category {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #B05F00;
+  background: #F8D16D;
+  font-weight: 700;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+section#reviews {
+  background: #fff;
+}
+
+.reviews__container {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.all__reviews {
+  display: flex;
+  gap: 30px;
+}
+
+.review__card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  font-family: 'Poppins', sans-serif;
+  padding: 25px;
+  border: 0.1px solid rgba(0, 0, 0, 0.1);
+  user-select: none;
+}
+
+.review__card img {
+  width: 80px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review__card .review__message {
+  color: #36455B;
+}
+
+.name__and__rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1.5px solid #7c8b9d80;
+}
+
+.name__and__rating h3 {
+  color: #272C49;
+}
+
+.name__and__rating .rating {
+  display: flex;
+  font-size: 12px;
+}
+
+/* Form Section */
+.form__container {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+input {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  padding: 12px 6px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1.5px solid #7c8b9d80;
+  color: #36455B;
+}
+
+input::placeholder{
+  font-family: 'Poppins', sans-serif;
+  color: rgba(128, 128, 128, 0.685);
+}
+
+/* Remove Arrow on Input number type */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+label{
+  font-family: 'Poppins', sans-serif;
+  color: #272C49;
+  font-size: 12px;
+  text-align: left;
+}
+
+input[type="checkbox"]{
+  width: 16px;
+  height: 16px;
+}
+
+#submit-form{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  padding: 8px 0;
+  border-radius: 8px;
+  color: #B05F00;
+  font-weight: 600;
+  font-size: 16px;
+  background: #FFCB40;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#warning{
+  font-family: 'Poppins', sans-serif;
+  color: red;
+  font-size: 14px;
+}
+
+/* Remove autofill bg color */
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+/* Footer Section */
+footer {
+  background: #272C49;
+  padding: 64px 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.company__info span {
+  display: block;
+  font-size: 14px;
+}
+
+.social__media {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.social__media img {
+  width: 30px;
+}
+
+.footer__link ul {
+  display: flex;
+  gap: 50px;
+  list-style-type: none;
+}
+
+.footer__link ul li a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  border-top: 1px solid #D1D9E2;
+}
+
+.copyright span,
+.copyright a {
+  color: white;
+  font-size: 12px;
+}
